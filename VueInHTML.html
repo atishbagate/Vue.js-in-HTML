@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vue using CDN</title>
+  </head>
+  <body>
+    <div id="app">
+      <h2>name: {{abcd}}</h2>
+        FirstName : <input type = "text" v-model = "firstname" /> <br/><br/>
+         LastName : <input type = "text" v-model = "lastname"/> <br/><br/>
+         <h1>My name is {{firstname}} {{lastname}}</h1>
+         <h1>Using computed method : {{getfullname}}</h1>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script type="text/javascript" src="VueInJS.js"></script>
+  </body>
+</html>

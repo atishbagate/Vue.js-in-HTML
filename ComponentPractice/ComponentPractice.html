@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Component Practice</title>
+    <link rel="stylesheet" href="/ComponentPractice.css">
+    <style media="screen">
+    </style>
+  </head>
+  <body>
+ <div id="app">
+   <!-- <h2>this is app {{author.name}}</h2>
+   Kilometers: <input type="text" v-model='km'/>
+   Meter: <input type="text" v-model='mtr'/>
+   <h2>meter: {{mtr}}</h2>
+   <h2>Kilometers: {{km}}</h2>
+   Gallon: <input type="text" v-model='gallon'/>
+   Liter: <input type="text" v-model='liter' />
+   <h2>Gallon: {{ gallon}}</h2>
+   <h2>Liters: {{liter}}</h2>
+    <h2 v-if='num===0'>number is zero</h2>
+   <h2 v-else-if='num<0'>the number is negative</h2>
+   <h2 v-else-if='num>0'>the number is positive</h2>
+   <h2 v-else>it is not a number</h2>
+   <template v-if='decision'>
+     <h2>this is template tag specially for rendering condition.</h2>
+   </template>
+   <h2 v-show='decision'>this is v-view</h2> -->
+  <!-- list renering   -->
+  <!-- <h2 v-for='(name,index) in names' :key='name'>{{index}} {{name}}</h2> -->
+   <!-- <h2 v-for='name in fullNames' :key='name.first'>{{name.first}} {{name.last}}</h2> -->
+   <!-- <div v-for="actor in actors" :key="actor.name">
+     <h2>This is {{actor.name}}</h2>
+     <h5 v-for="movie in actor.movies">{{movie}}</h5>
+   </div> -->
+   <!-- <h2 v-for="(index, value, key) in infos" :key="value">{{key}} {{index}}
+      : {{value}}</h2> -->
+      <!-- directives -->
+      <!-- <h2>name without v-once = {{movie.name}}</h2>
+      <h3 v-once >name with v-once  = {{movie.name}}</h3>
+      <button type="button" v-on:click="movie.name='doremon'"
+       name="button">click to update</button> -->
+       <!-- <h3 v-pre >name with v-once  = {{movie.name}}</h3> -->
+      <!-- <div v-cloak>{{movie.name}}</div> -->
+      <!-- <div v-html="vHtml"></div> -->
+      <!-- <span v-text="movie.name"></span> -->
+      <!-- <h2 v-bind:id="headingID" class="font-weight-bold">this is Binding Attribute Example.</h2> -->
+      <!-- <h2 v-bind:class="['old','iscenter']">success</h2>
+      <h4 v-bind:class="{
+        condition1s : condition1,
+        condition2s: condition1
+      }">object approch to use binding.</h4> -->
+      <!-- <h3 v-bind:class=" iscenter ? 'new':'old' ">text center through CSS</h3> -->
+      <!-- <h3 v-bind:style="{ -->
+        <!-- this is from Data()  -->
+        <!-- color:highlighColor, -->
+        <!-- if Tag has - then use '' inside. and conca  px in '' -->
+        <!-- 'font-size': sizes +'px', -->
+        <!-- or we can use Camel case -->
+        <!-- fontFamily: fms, -->
+        <!-- we can add style properties directly -->
+        <!-- fontStyle: 'italic'
+      }">Inline styling with V-binding.</h3> -->
+      <!-- <h2 v-bind:style="objstyle">this is Style Syntax used from data.</h2> -->
+      <h4 v-bind:style=[objstyle,objstyle2] >this is example of multiple -
+        styles in array.( array of object)</h4>
+ </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="ComponentPractice.js"></script>
+  </body>
+</html>
